@@ -1,0 +1,144 @@
+*
+{
+    box-sizing: border-box;
+    
+}
+body{
+    background: url("../images/darktriangles.png");
+}
+
+#container
+{
+    width: 100%;
+    margin:0 auto;
+}
+#header{
+    
+    padding: 0px;
+    
+}
+#slika{
+    display: inline-block;
+    width: 6%;
+}
+#moto{
+    display: inline-block;
+    width: 20%;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    float: left;
+    width: 10%;
+    text-align: center;
+    height: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(14, 14, 145);
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: palevioletred;
+}
+
+.prodaja{
+    width: 80%;
+    display: inline-block;
+    float: left;
+}
+.prodaja .proizvod img{
+    height: 350px;
+    width: 60%;
+    margin-left: 125px;
+}
+.prodaja .proizvod{
+    width: 45%;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+h3{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+#korpa{
+    text-align: center;
+    font-size: 20px;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/business/16/add_to_cart-512.png");
+    background-repeat: no-repeat;
+}
+
+.registracija{
+    width: 20%;
+    display: inline-block;
+    background-color: rgb(104, 103, 103);
+    float: left;
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+#nazivi{
+    float: left;
+    width: 40%;
+    line-height: 21px;
+}
+#popunjavanje{
+    float: left;
+    width: 50%;
+}
+.vesti{
+  display: inline-block;
+  width: 20%;
+  height: 1100px;
+  background-color: rgb(14, 14, 145);
+  margin-top: 6px;
+}
+h4{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.vesti1{
+    display:inline-block;
+    float:left;
+    width:55%;
+}
+.vesti2{
+    margin-top:15px;
+    display: inline-block;
+    float:left;
+    width:40%;
+    height:180px;
+    margin-bottom: 20px;    
+}
+#footer{
+    padding: 0px;
+    color: white;
+    text-align: right;
+}
+#proizvodkorpa{
+text-align: center;
+padding:0;
+margin:0;
+}
