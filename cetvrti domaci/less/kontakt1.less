@@ -1,0 +1,95 @@
+@bojaFonta: white;
+@blokPozicija: inline-block;
+@pojavljivanjeDiva: none;
+
+.line {
+	width: 35px;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 80%;
+	background-color: white;
+	height: 5px;
+}
+.hamburger {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	display: @pojavljivanjeDiva;
+}
+.centar {
+	width: 100%;
+	display: @blokPozicija;
+}
+.mapa {
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#belaSlova {
+	text-align: center;
+	color: @bojaFonta;
+	font-size: 24px;
+}
+.poruka {
+	float: left;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+textarea {
+	height: 150px;
+	width: 300px;
+}
+#nazivi {
+	p {
+		color: @bojaFonta;
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width:1256px) {
+	#nav {
+        display: @blokPozicija;
+	}
+	#moto {
+		display: @blokPozicija;
+	}
+	.registracija {
+		display: @blokPozicija;
+	}
+	.vesti {
+		display: @blokPozicija;
+	}
+	ul {
+		li {
+			width: 20%;
+			display: block;
+			float: none;
+		}
+	}
+	.hamburger {
+		display: block;
+	}
+}
+@media only screen and (max-width:800px) {
+	#nav {
+		display: @blokPozicija;
+	}
+	#moto {
+		display: @blokPozicija;
+	}
+	.registracija {
+		display: @blokPozicija;
+	}
+	.vesti {
+		display: @blokPozicija;
+	}
+	ul {
+		li {
+			width: 20%;
+			display: block;
+			float: none;
+		}
+	}
+	.hamburger {
+		display: block;
+	}
+}

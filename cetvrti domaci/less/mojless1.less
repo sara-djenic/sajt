@@ -1,0 +1,223 @@
+@background: url("../images/darktriangles.png");
+@celaSirina: 100%;
+@marginaAuto: 0 auto;
+@blokPozicija: inline-block;
+@tekstPozicija: center;
+@bojaFonta: white;
+* {
+	box-sizing: border-box;
+}
+body {
+	background: @background;
+}
+#container {
+	width: @celaSirina;
+	margin: @marginaAuto;
+}
+#header {
+	padding: 0px;
+}
+#slika {
+	display: @blokPozicija;
+	width: 6%;
+}
+#moto {
+	display: @blokPozicija;
+	width: 20%;
+	font-size: 45px;
+	color: @bojaFonta;
+	text-align: @tekstPozicija;
+}
+ul {
+	list-style-type: none;
+	li {
+		float: left;
+		width: 10%;
+		text-align: @tekstPozicija;
+		height: 30px;
+		font-size: 25px;
+		margin-bottom: 20px;
+		color: #800080;
+		a {
+			display: block;
+			text-decoration: none;
+			&:hover {
+				background-color: palevioletred;
+			}
+		}
+	}
+}
+.prodaja {
+	width: 80%;
+	display: @blokPozicija;
+	float: left;
+	.proizvod {
+		img {
+			height: 350px;
+			width: 60%;
+			margin-left: 125px;
+		}
+		width: 45%;
+		display: @blokPozicija;
+		margin: 5px;
+		padding: 5px;
+		margin-left: 45px;
+		margin-top: 20px;
+	}
+}
+h1 {
+	text-align: @tekstPozicija;
+	margin: 0;
+	color: @bojaFonta;
+}
+h3 {
+	text-align: @marginaAuto;
+	margin: 0;
+	color: @bojaFonta;
+}
+#korpa {
+	text-align: @tekstPozicija;
+	font-size: 20px;
+}
+.registracija {
+	width: 20%;
+	display: @blokPozicija;
+	background-color: rgb(104, 103, 103);
+	float: left;
+	margin-top: 20px;
+}
+h2 {
+	text-align: @tekstPozicija;
+	margin: 0;
+	color: black;
+}
+#nazivi {
+	float: left;
+	width: 40%;
+	line-height: 21px;
+}
+#popunjavanje {
+	float: left;
+	width: 50%;
+}
+.vesti {
+	display: @blokPozicija;
+	width: 20%;
+	height: 1100px;
+	background-color: rgb(14, 14, 145);
+	margin-top: 6px;
+}
+h4 {
+	margin: 0px;
+	padding: 0px;
+	text-align: @tekstPozicija;
+	margin-bottom: 5px;
+}
+.vesti1 {
+	display: @blokPozicija;
+	float: left;
+	width: 55%;
+}
+.vesti2 {
+	margin-top: 15px;
+	display: @blokPozicija;
+	float: left;
+	width: 40%;
+	height: 180px;
+	margin-bottom: 20px;
+}
+#footer {
+	clear: both;
+	padding: 0px;
+	color: @bojaFonta;
+	text-align: right;
+}
+#proizvodkorpa {
+	text-align: @tekstPozicija;
+	padding: 0;
+	margin: 0;
+}
+.line {
+	width: 35px;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 80%;
+	background-color: white;
+	height: 5px;
+}
+.hamburger {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	display: none;
+}
+@media only screen and (max-width:1256px) {
+	#nav {
+		display: none;
+	}
+	#moto {
+		display: none;
+	}
+	.registracija {
+		display: none;
+	}
+	.vesti {
+		display: none;
+	}
+	ul {
+		li {
+			width: 20%;
+			display: block;
+			float: none;
+		}
+	}
+	.hamburger {
+		display: block;
+	}
+	.prodaja {
+		.proizvod {
+			display: @blokPozicija;
+			width: 80%;
+			text-align: @tekstPozicija;
+			img {
+				width: 80%;
+				margin-left: 0px;
+			}
+		}
+	}
+}
+@media only screen and (max-width:800px) {
+	#nav {
+		display: none;
+	}
+	#moto {
+		display: none;
+	}
+	.registracija {
+		display: none;
+	}
+	.vesti {
+		display: none;
+	}
+	ul {
+		li {
+			width: 20%;
+			display: block;
+			float: none;
+		}
+	}
+	.hamburger {
+		display: block;
+	}
+	.prodaja {
+		.proizvod {
+			display: @blokPozicija;
+			width: 80%;
+			text-align: @tekstPozicija;
+			img {
+				width: 80%;
+				margin-left: 0px;
+			}
+		}
+	}
+}

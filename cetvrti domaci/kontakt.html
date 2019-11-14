@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drustvene igre - Kontakt</title>
+    <link rel="stylesheet" href="css/mojless1.css">
+    <link rel="stylesheet" href="css/kontakt1.css">
+    <script src="jq/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        $(".hamburger").click(function() {
+            $("#nav").slideToggle(400);
+        });
+        $(window).resize(function () {
+             if($(".hamburger").css("display") == "none")
+             {
+                 $("#nav").css("display","block");
+             }
+         })
+    })
+        $(document).ready(function() {
+            $("#popunjavanje input").click(function() {
+                $(this).css("background-color", "pink");
+            });
+            $("#popunjavanje input").click(function() {
+                $(this).css("background-color", "pink");
+            });
+            $("#popunjavanje textarea").click(function() {
+                $(this).css("background-color", "pink");
+            });
+            $("#popunjavanje textarea").click(function() {
+                $(this).css("background-color", "pink");
+            });
+            
+        
+
+    $("#submit").click(function(){
+         alert("Vaša poruka je poslata!");
+     });
+});
+    </script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="slika">
+                <img src="images/boardgame.jpg" alt="logo">
+            </div>
+    
+            <div id="moto">
+                Mind your game.
+            </div>
+
+            <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </div>
+
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Pocetna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="#">Proizvodi</a></li>
+                    <li><a href="#">Novosti</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="centar">
+            <div class="mapa">
+                <p id="belaSlova">Lokacija:</p>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bulevar%20kralja%20aleksandra%20155&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+            </div>
+            <div class="poruka">
+                <p id="belaSlova">Pošaljite nam poruku:</p>
+                <div id="nazivi">
+                    <p>Ime:</p>
+                    <p>E-mail:</p>
+                    <p>Naslov poruke:</p>
+                    <p>Poruka:</p>
+                </div>
+                <div id="popunjavanje">               
+                    <p><input type="text" name="username"></p>
+                    <p><input type="email"></p>
+                    <p><input type="text" name="naslovPoruke"></p>
+                    <p><textarea></textarea></p>
+                    <p><button type="button" id="submit">Pošaljite poruku</button></p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Sara Djenic S51/17<br>Kosovska 17, Beograd<br>sdjenic17@raf.rs<br>
+                062/661788
+            </p>
+        </div> 
+
+    </div>
+</body>
